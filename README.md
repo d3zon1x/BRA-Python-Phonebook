@@ -25,7 +25,7 @@ Even if you're new to coding, this will walk you through everything.
 4. Type: `git clone YOUR_LINK_HERE`  
 5. Press Enter.
 
-## 3. 🌳 Go to the Right Branch `PYnnn`
+### 3. 🌳 Go to the Right Branch `PYnnn`
 * **What:** Switch to the correct version of the project.
 * **Why:** All students work in the `PYnnn` branch.
 * **How:**  
