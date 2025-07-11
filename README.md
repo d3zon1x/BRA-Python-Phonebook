@@ -30,14 +30,14 @@ Even if you're new to coding, this will walk you through everything.
 
 ---
 
-## 3. 🌳 Go to the Right Branch `PY{YOUR_GROUP_NUMBER}`
+## 3. 🌳 Go to the Right Branch `PYnnn`
 * **What:** Switch to the correct version of the project.
-* **Why:** All students work in the `PY{YOUR_GROUP_NUMBER}` branch.
+* **Why:** All students work in the `PYnnn` branch.
 * **How:**  
 1. In terminal, go to the folder:  
    `cd YOUR_PROJECT_FOLDER`  
 2. Type:  
-   `git checkout PY{YOUR_GROUP_NUMBER}`
+   `git checkout PYnnn`
 
 ---
 
@@ -91,7 +91,7 @@ Even if you're new to coding, this will walk you through everything.
 2. Click `Compare & pull request`.  
 3. Make sure:  
    - **Base repository** = teacher’s repo  
-   - **Base branch** = `PY{YOUR_GROUP_NUMBER}`
+   - **Base branch** = `PYnnn`
    - **Head repository** = your repo  
    - **Compare branch** = your branch  
 4. Click `Create pull request`.  
@@ -107,12 +107,12 @@ Even if you're new to coding, this will walk you through everything.
    `git remote add upstream https://github.com/TEACHER_USERNAME/REPO_NAME.git`  
 2. Get updates:  
    `git fetch upstream`  
-3. Switch to `PY{YOUR_GROUP_NUMBER}`:  
-   `git checkout PY{YOUR_GROUP_NUMBER}`  
+3. Switch to `PYnnn`:  
+   `git checkout PYnnn`  
 4. Merge changes:  
-   `git merge upstream/PY{YOUR_GROUP_NUMBER}`  
+   `git merge upstream/PYnnn`  
 5. Push to your fork:  
-   `git push origin PY{YOUR_GROUP_NUMBER}`
+   `git push origin PYnnn`
 
 ---
 
@@ -153,7 +153,6 @@ Even if you're new to coding, this will walk you through everything.
       1. 🔄 Update your fork with the latest changes from the main repo (see “Keep Your Fork Updated” step).  
       2. 🔀 Merge those updates into your branch:  
      `git checkout your-branch`  
-     `git merge PY133`  
       3. ⚔️ Fix any conflicts (see above).  
       4. 🚀 Push the updated branch: `git push origin your-branch`.  
       5. 🔄 The pull request should update automatically.
@@ -208,13 +207,13 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 
 ---
 
-### 2. 🔀 Switch to the PY133 Branch
+### 2. 🔀 Switch to the PYnnn Branch
 * **What:** Make sure you are working on the correct project branch.
-* **Why:** All group work happens in branch `PY133`.
+* **Why:** All group work happens in branch `PYnnn`.
 * **How:**  
 1. At the bottom-right corner of PyCharm, click the branch name.  
-2. Select `PY133` from the list.  
-3. If you don’t see it, click `Remote Branches` and check out `origin/PY133`.
+2. Select `PYnnn` from the list.  
+3. If you don’t see it, click `Remote Branches` and check out `origin/PYnnn`.
 
 ---
 
@@ -268,8 +267,8 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 2. To fetch and merge updates:  
    - Use terminal:  
      `git fetch upstream`  
-     `git checkout PY133`  
-     `git merge upstream/PY133`  
+     `git checkout PYnnn`  
+     `git merge upstream/PYnnn`  
    - Or use PyCharm’s VCS > Git > Fetch and Merge.
 
 ---
