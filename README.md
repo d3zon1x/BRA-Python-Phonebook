@@ -337,7 +337,7 @@ Or, you can create a pull request (PR) directly from PyCharm — if it’s corre
    Choose `Create Pull Request` (only available if properly configured)
 
 4. Fill in the pull request form:  
-   - **Target branch** → PY133  
+   - **Target branch** → PYnnn  
    - **Source branch** → your branch  
    - **Base repo** → teacher’s repo  
    - **Head repo** → your fork  
@@ -351,7 +351,7 @@ That’s common in the Community Edition. Do this instead:
 1. Push your branch in PyCharm  
 2. Go to your repository on GitHub in your browser  
 3. Click `Compare & pull request` (GitHub usually suggests it)  
-4. Make sure base = PY133 and head = your branch  
+4. Make sure base = PYnnn and head = your branch  
 5. Write your description and click `Create pull request`
 
 #### 💡 Tips
