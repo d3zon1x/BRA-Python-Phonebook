@@ -15,7 +15,6 @@ Even if you're new to coding, this will walk you through everything.
 2. Click the `Fork` button in the top-right corner.  
 3. GitHub will create a copy in your account.
 
-
 ### 2. ©️ Clone Your Fork to Your Computer
 * **What:** Download your GitHub project copy to your computer.
 * **Why:** So you can edit the code using your own tools.
@@ -26,8 +25,6 @@ Even if you're new to coding, this will walk you through everything.
 4. Type: `git clone YOUR_LINK_HERE`  
 5. Press Enter.
 
-
-
 ## 3. 🌳 Go to the Right Branch `PYnnn`
 * **What:** Switch to the correct version of the project.
 * **Why:** All students work in the `PYnnn` branch.
@@ -37,15 +34,14 @@ Even if you're new to coding, this will walk you through everything.
 2. Type:  
    `git checkout PYnnn`
 
-
 ### 4. 🔶 Create a New Branch for Your Work
 * **What:** Create your own branch to work on.
 * **Why:** Keeps your changes organized and separate.
 * **How:**  
 1. Type:  
    `git checkout -b yourname-task`  
-   Example: `git checkout -b anna-levels`
-
+   Example:  
+   `git checkout -b memory-checker`
 
 ### 5. 📝 Make Your Changes
 * **What:** Edit or add files to complete your task.
@@ -53,7 +49,6 @@ Even if you're new to coding, this will walk you through everything.
 * **How:**  
 - Use any editor like VS Code, Roblox Studio, or Notepad++  
 - Make small, clear changes
-
 
 ### 6. 💾 Save and Commit Your Changes
 * **What:** Tell Git to remember your changes.
@@ -65,8 +60,8 @@ Even if you're new to coding, this will walk you through everything.
      `git status`
 2. Then:  
    `git commit -m "What you did"`  
-   Example: `git commit -m "Added player jump animation"`
-
+   Example:  
+   `git commit -m "Added player jump animation"`
 
 ### 7. 📌 Push Your Branch to GitHub
 * **What:** Send your work to GitHub.
@@ -74,7 +69,6 @@ Even if you're new to coding, this will walk you through everything.
 * **How:**  
 1. Type:  
    `git push origin yourname-task`
-
 
 ### 8. 🙋‍♂️ Make a Pull Request (PR)
 * **What:** Ask to add your changes into the main project.
@@ -89,7 +83,6 @@ Even if you're new to coding, this will walk you through everything.
    - **Compare branch** = your branch  
 4. Click `Create pull request`.  
 5. Write what you did and click `Submit`.
-
 
 ### 9. 🔄 Keep Your Fork Updated
 * **What:** Get the latest changes from the teacher’s project.
@@ -106,7 +99,6 @@ Even if you're new to coding, this will walk you through everything.
 5. Push to your fork:  
    `git push origin PYnnn`
 
-
 ### 10. Repeat Steps 4–8 for Every Task
 **Always:**  
 - Create a new branch  
@@ -121,51 +113,41 @@ Even if you're new to coding, this will walk you through everything.
 
 * **What:** A `.gitignore` file tells Git which files or folders it should **not** track.
 * **Why:** Some files should stay on your computer and never be uploaded to GitHub, for example:
-- Secret passwords or API keys
-- Temporary files from editors (like `.idea` from PyCharm)
-- Build or output files
-- Log files, caches, or auto-generated content
+  - Secret passwords or API keys
+  - Temporary files from editors (like `.idea` from PyCharm)
+  - Build or output files
+  - Log files, caches, or auto-generated content
 
 #### 📄 How to Create or Edit .gitignore
 
 1. In the root of your project folder, create a file named:  
    `.gitignore`
-
 2. Add file and folder patterns to ignore. For example:
-
    - Ignore Python cache and compiled files:  
      `__pycache__/`  
-     `*.pyc`  
-
+     `*.pyc`
    - Ignore PyCharm project files:  
-     `.idea/`  
-
+     `.idea/`
    - Ignore secret environment files:  
-     `.env`  
-
+     `.env`
    - Ignore Roblox Studio autosaves:  
      `*.rbxl.autosave`  
 
 #### 🔄 When Does .gitignore Work?
-
 - It only works **for files that are not already tracked** by Git.
 - If a file is already committed, adding it to `.gitignore` won’t remove it from Git history.
 
 #### 🧹 How to Stop Tracking a File You Already Added
-
 If you added a file by mistake and want Git to forget it but keep it on your computer:
 
 1. Untrack the file:  
-   `git rm --cached filename`  
-
+   `git rm --cached filename`
    Example:  
-   `git rm --cached .env`  
-
+   `git rm --cached .env`
 2. Commit the change:  
    `git commit -m "Removed tracked file .env"`  
 
 Now Git will ignore it if it’s listed in `.gitignore`.
-
 
 #### 💡 Pro Tips
 
@@ -253,7 +235,6 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 3. Paste the URL of your forked repository (ends with `.git`).  
 4. Choose a folder to save the project and click `Clone`.
 
-
 ### 2. 🔀 Switch to the PYnnn Branch
 * **What:** Make sure you are working on the correct project branch.
 * **Why:** All group work happens in branch `PYnnn`.
@@ -278,7 +259,6 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 - Open files and start editing.  
 - Save your work (Ctrl+S or File > Save All).
 
-
 ### 5. ✅ Commit Your Changes
 * **What:** Tell Git to record your changes with a message.
 * **Why:** Keeps track of your progress and what you changed.
@@ -289,14 +269,12 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 4. Check the files you want to commit.  
 5. Click `Commit` or `Commit and Push` to send changes directly to GitHub.
 
-
 ### 6. 🚀 Push Your Branch to GitHub
 * **What:** Upload your commits so others can see your work.
 * **Why:** Necessary for creating pull requests.
 * **How:**  
 - If you didn’t push during commit, click `Git > Push` or click the ↑ arrow in the Git window.  
 - Confirm the branch and push.
-
 
 ### 7. 🔄 Pull Changes from Upstream
 * **What:** Update your local project with the latest changes from the main repository.
@@ -328,14 +306,11 @@ Or, you can create a pull request (PR) directly from PyCharm — if it’s corre
 1. Make sure your branch is pushed:  
    Go to `VCS > Git > Push`  
    or click the ↑ icon in the top-right corner
-
 2. Open the Git Log:  
    Go to `View > Tool Windows > Git`  
    Click the `Log` tab to see your commits
-
 3. Right-click your latest commit  
    Choose `Create Pull Request` (only available if properly configured)
-
 4. Fill in the pull request form:  
    - **Target branch** → PYnnn  
    - **Source branch** → your branch  
@@ -347,7 +322,6 @@ Or, you can create a pull request (PR) directly from PyCharm — if it’s corre
 #### 🧭 If You Don’t See “Create Pull Request” Option
 
 That’s common in the Community Edition. Do this instead:
-
 1. Push your branch in PyCharm  
 2. Go to your repository on GitHub in your browser  
 3. Click `Compare & pull request` (GitHub usually suggests it)  
@@ -355,7 +329,6 @@ That’s common in the Community Edition. Do this instead:
 5. Write your description and click `Create pull request`
 
 #### 💡 Tips
-
 - PR = asking to merge your changes into the main project
 - You only create PRs **after pushing your branch**
 - If anything is unclear, ask the teacher before submitting
