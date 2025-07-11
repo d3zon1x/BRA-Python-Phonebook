@@ -56,7 +56,7 @@ Even if you're new to coding, this will walk you through everything.
 * **How:**  
 1. Type:  
    `git add .`
-   - Make sure that you don't commit cache files: 
+   - Make sure that you don't commit cache files:  
      `git status`
 2. Then:  
    `git commit -m "What you did"`  
@@ -141,7 +141,7 @@ Even if you're new to coding, this will walk you through everything.
 If you added a file by mistake and want Git to forget it but keep it on your computer:
 
 1. Untrack the file:  
-   `git rm --cached filename`
+   `git rm --cached filename`  
    Example:  
    `git rm --cached .env`
 2. Commit the change:  
@@ -249,7 +249,7 @@ PyCharm can help you work with Git and GitHub more easily using its built-in too
 * **How:**  
 1. Click the branch name again.  
 2. Choose `New Branch`.  
-3. Enter your branch name like `yourname-task` (example: `anna-levels`).  
+3. Enter your branch name like `yourname-task`.  
 4. Click `Create`.
 
 ### 4. 💻 Make and Save Changes
