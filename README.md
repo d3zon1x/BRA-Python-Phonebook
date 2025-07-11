@@ -6,7 +6,7 @@ Welcome!
 Here's a step-by-step guide to help you work with our shared project using GitHub. 
 Even if you're new to coding, this will walk you through everything.
 
-## Pure git instructions
+## Wirking with pure Git
 ### 1. 🍴 Fork the Main Repository
 * **What:** Make your own copy of the project.
 * **Why:** So you can safely make changes without breaking the original code.
