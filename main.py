@@ -1,5 +1,4 @@
 phonebook = {}
-phonebook = {}
 
 def add_entry():
     print("Add new entry - stub")
@@ -14,7 +13,10 @@ def search_by_full_name():
     print("Search by full name - stub")
 
 def search_by_phone_number():
-    print("Search by telephone number - stub")
+    a = input('Уведіть номер телефону для пошуку: ')
+    result = []
+    for i in phonebook.values():
+        print(i)
 
 def search_by_city_or_state():
     print("Search by city or state - stub")
@@ -73,3 +75,4 @@ def main():
     application_loop()
 
 main()
+search_by_phone_number()
