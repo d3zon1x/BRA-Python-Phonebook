@@ -13,8 +13,11 @@ def search_by_last_name(): # Андрій
 def search_by_full_name(): # Віталіна
     print("Search by full name - stub")
 
-def search_by_phone_number(): # Михайло
-    print("Search by telephone number - stub")
+def search_by_phone_number():
+    a = input('Уведіть номер телефону для пошуку: ')
+    result = []
+    for i in phonebook.values():
+        print(i)
 
 def search_by_city_or_state(): # Ростислав
     query = input("Enter city or state to search: ").strip().lower()
@@ -82,3 +85,4 @@ def main():
     application_loop()
 
 main()
+search_by_phone_number()
