@@ -1,36 +1,37 @@
-phonebook = {}
+# {("first_name", "last_name"): ("phone_number", "sity", "state")  }
 phonebook = {}
 
-def add_entry():
+def add_entry(): # Nazar
     print("Add new entry - stub")
 
-def search_by_first_name():
+def search_by_first_name(): # Артем Ніколаєв
     print("Search by first name - stub")
 
-def search_by_last_name():
+def search_by_last_name(): # Андрій
     print("Search by last name - stub")
 
-def search_by_full_name():
+def search_by_full_name(): # Віталіна
     print("Search by full name - stub")
 
-def search_by_phone_number():
+def search_by_phone_number(): # Михайло
     print("Search by telephone number - stub")
 
-def search_by_city_or_state():
+def search_by_city_or_state(): # Ростислав
     print("Search by city or state - stub")
 
-def delete_by_phone_number():
+def delete_by_phone_number(): # Дмитро
     print("Delete a record by telephone number - stub")
 
-def update_by_phone_number():
+def update_by_phone_number(phone_number, new_person): # Юлія
     print("Update a record by telephone number - stub")
 
 def exit_program():
     print("Exiting program.")
-    exit()
+    return False
 
 def application_loop():
-    while True:
+    is_working = True
+    while is_working:
         print("""\nPhonebook Menu:
 1) Add new entries 
 2) Search by first name 
@@ -65,7 +66,7 @@ def application_loop():
             case 8:
                 update_by_phone_number()
             case 9:
-                exit_program()
+                is_working = exit_program()
             case _:
                 print("Invalid choice. Please select a number from 1 to 9.")
 
