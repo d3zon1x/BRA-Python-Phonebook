@@ -8,7 +8,17 @@ def search_by_first_name(): # Артем Ніколаєв
     print("Search by first name - stub")
 
 def search_by_last_name(): # Андрій
-    print("Search by last name - stub")
+    results = []
+
+    l_name = input("Enter last name: ").strip()
+
+    for (first_name, last_name), (phone_number, city, state) in phonebook.items():
+        if last_name.lower() == l_name.lower():
+            results.append((first_name, last_name, phone_number, city, state))
+            found = True
+    print(f"Found entries: {results}") if results else print(f"No entries found for entered last name '{l_name}'.")
+
+    # return results
 
 def search_by_full_name(): # Віталіна
     print("Search by full name - stub")
