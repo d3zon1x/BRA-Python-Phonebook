@@ -1,8 +1,29 @@
 # {("first_name", "last_name"): ("phone_number", "sity", "state")  }
 phonebook = {}
 
-def add_entry(): # Nazar
-    print("Add new entry - stub")
+def add_entry():
+    try:
+        first_name = input("Enter first name: ").strip().capitalize()
+        last_name = input("Enter last name: ").strip().capitalize()
+        phone_number = input("Enter phone number: ").strip().capitalize()
+        city = input("Enter city: ").strip().capitalize()
+        state = input("Enter state: ").strip().upper()
+
+        if not all([first_name, last_name, phone_number, city, state]):
+            print("Error: All fields are required!")
+            return False
+
+        if (first_name, last_name) in phonebook:
+            print("Error: This person is already in the phonebook!")
+            return False
+
+        phonebook[(first_name, last_name)] = (phone_number, city, state)
+        print(f"\n {first_name} {last_name} added to the phonebook!")
+        return True
+        
+    except Exception as e:
+        print(f"Error adding entry: {str(e)}")
+        return False
 
 def search_by_first_name(): # Артем Ніколаєв
     print("Search by first name - stub")
