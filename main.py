@@ -14,10 +14,15 @@ def search_by_full_name(): # Віталіна
     print("Search by full name - stub")
 
 def search_by_phone_number():
-    a = input('Уведіть номер телефону для пошуку: ')
-    result = []
-    for i in phonebook.values():
-        print(i)
+    phone = input("Enter the phone number to search: ")
+    found = False
+    for (first_name, last_name), (phone_number, city, state) in phonebook.items():
+        if phone_number == phone:
+            print(f"Found: {first_name} {last_name} | Phone: {phone_number} | City: {city} | State: {state}")
+            found = True
+            break
+    if not found:
+        print("No entry found with that phone number.")
 
 def search_by_city_or_state(): # Ростислав
     query = input("Enter city or state to search: ").strip().lower()
