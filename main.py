@@ -17,7 +17,15 @@ def search_by_phone_number(): # Михайло
     print("Search by telephone number - stub")
 
 def search_by_city_or_state(): # Ростислав
-    print("Search by city or state - stub")
+    query = input("Enter city or state to search: ").strip().lower()
+    results = []
+    for (first_name, last_name), (phone_number, city, state) in phonebook.items():
+        if query == city.lower() or query == state.lower():
+            results.append(f"{first_name} {last_name}: {phone_number}, {city}, {state}")
+    if results:
+        print("\n".join(results))
+    else:
+        print("No entries found for the given city or state.")
 
 def delete_by_phone_number(): # Дмитро
     print("Delete a record by telephone number - stub")
